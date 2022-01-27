@@ -1,11 +1,11 @@
 package app
 
 import (
+	"app/http"
+	"app/repository/rest/leslie_api_repo"
+	"app/services"
 	"fmt"
 	"github.com/gin-gonic/gin"
-	"github.com/golanshy/load_tester/http"
-	"github.com/golanshy/load_tester/repository/rest/leslie_api_repo"
-	"github.com/golanshy/load_tester/services"
 	"github.com/golanshy/plime_core-go/logger"
 	"os"
 	"strings"

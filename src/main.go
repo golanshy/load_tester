@@ -1,6 +1,8 @@
 package main
 
-import "github.com/golanshy/load_tester/app"
+import (
+	"app/app"
+)
 
 func main() {
 	app.StartApplication()

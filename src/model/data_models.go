@@ -14,22 +14,6 @@ type Location struct {
 	LocationId string `json:"location_id"`
 }
 
-//type Order struct {
-//	LocationId               string      `json:"location_id"`
-//	TableID                  string      `json:"table_id"`
-//	RoomNumber               string      `json:"room_number"`
-//	RoomSurname              string      `json:"room_surname"`
-//	CustomerName             string      `json:"customer_name"`
-//	PhoneNumber              string      `json:"phone_number"`
-//	OrderConfirmationMessage string      `json:"order_confirmation_message"`
-//	MerchantID               string      `json:"merchant_id"`
-//	Currency                 string      `json:"currency"`
-//	OrderType                string      `json:"order_type"`
-//	OrderItems               []OrderItem `json:"order_items"`
-//	Amount                   float64     `json:"amount"`
-//	UIVersion                string      `json:"ui_version"`
-//}
-
 type Order struct {
 	Data OrderData `json:"data"`
 }

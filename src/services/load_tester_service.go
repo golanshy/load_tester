@@ -1,9 +1,9 @@
 package services
 
 import (
+	"app/model"
+	"app/repository/rest/leslie_api_repo"
 	"fmt"
-	"github.com/golanshy/load_tester/model"
-	"github.com/golanshy/load_tester/repository/rest/leslie_api_repo"
 	"github.com/golanshy/plime_core-go/logger"
 	"github.com/golanshy/plime_core-go/utils/rest_errors"
 	"time"

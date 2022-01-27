@@ -1,13 +1,12 @@
 package leslie_api_repo
 
 import (
+	"app/model"
 	"encoding/json"
 	"errors"
 	"fmt"
 	"github.com/go-resty/resty/v2"
-	"github.com/golanshy/load_tester/model"
 	"github.com/golanshy/plime_core-go/logger"
-	"github.com/golanshy/plime_core-go/utils/rest_errors"
 )
 
 var (
@@ -66,8 +65,8 @@ func (r *leslieApiRepository) Order(data *data_models.Order) {
 
 	var results data_models.OrderResult
 	if err := json.Unmarshal(restResponse.Body(), &results); err != nil {
-		logger.Error("error unmarshaling json response when trying to get search search_results from companies house api", err)
-		return nil, rest_errors.NewInternalServerError("error unmarshaling json response when trying to get search search_results from companies house api", err)
+		logger.Error("error unmarshaling json response when trying to get results from api", err)
+		return
 	}
 
 	logger.Info(fmt.Sprintf("StatusCode: %d, data: %s", restResponse.StatusCode(), restResponse.String()))

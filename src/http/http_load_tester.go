@@ -1,9 +1,9 @@
 package http
 
 import (
+	data_models "app/model"
+	"app/services"
 	"github.com/gin-gonic/gin"
-	data_models "github.com/golanshy/load_tester/model"
-	"github.com/golanshy/load_tester/services"
 	"github.com/golanshy/plime_core-go/logger"
 	"github.com/golanshy/plime_core-go/utils/rest_errors"
 	"net/http"
