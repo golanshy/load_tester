@@ -165,5 +165,5 @@ func NewOrder(itemNumber int) *Order {
 
 type OrderResult struct {
 	ID          interface{} `json:"id"`
-	OrderNumber string      `json:"order_number"`
+	OrderNumber int         `json:"order_number"`
 }
